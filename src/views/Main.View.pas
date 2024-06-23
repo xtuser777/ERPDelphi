@@ -10,6 +10,11 @@ type
   TMainView = class(TForm)
     pnlTop: TPanel;
     btnClose: TButton;
+    pnlMenu: TPanel;
+    pnlMain: TPanel;
+    pnlBottom: TPanel;
+    pnlContent: TPanel;
+    pnlLogo: TPanel;
     procedure btnCloseClick(Sender: TObject);
   private
     { Private declarations }

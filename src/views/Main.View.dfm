@@ -4,7 +4,7 @@ object MainView: TMainView
   Align = alClient
   BorderStyle = bsNone
   Caption = 'MainView'
-  ClientHeight = 521
+  ClientHeight = 501
   ClientWidth = 801
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -2136,7 +2136,7 @@ object MainView: TMainView
     Height = 41
     Align = alTop
     BevelOuter = bvNone
-    Color = cl3DDkShadow
+    Color = 5395026
     ParentBackground = False
     TabOrder = 0
     object btnClose: TButton
@@ -2148,6 +2148,71 @@ object MainView: TMainView
       Caption = 'Fechar'
       TabOrder = 0
       OnClick = btnCloseClick
+    end
+    object pnlLogo: TPanel
+      Left = 0
+      Top = 0
+      Width = 210
+      Height = 41
+      Align = alLeft
+      BevelOuter = bvNone
+      Color = 4605510
+      ParentBackground = False
+      TabOrder = 1
+      ExplicitLeft = 104
+      ExplicitTop = 8
+    end
+  end
+  object pnlMenu: TPanel
+    Left = 0
+    Top = 41
+    Width = 210
+    Height = 460
+    Align = alLeft
+    BevelOuter = bvNone
+    Color = 5395026
+    ParentBackground = False
+    TabOrder = 1
+    ExplicitHeight = 480
+  end
+  object pnlMain: TPanel
+    Left = 210
+    Top = 41
+    Width = 591
+    Height = 460
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 2
+    ExplicitLeft = 560
+    ExplicitTop = 224
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object pnlBottom: TPanel
+      Left = 0
+      Top = 419
+      Width = 591
+      Height = 41
+      Align = alBottom
+      BevelOuter = bvNone
+      Color = 5395026
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitLeft = 360
+      ExplicitTop = 384
+      ExplicitWidth = 185
+    end
+    object pnlContent: TPanel
+      Left = 0
+      Top = 0
+      Width = 591
+      Height = 419
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      ExplicitLeft = 264
+      ExplicitTop = 176
+      ExplicitWidth = 185
+      ExplicitHeight = 41
     end
   end
 end
