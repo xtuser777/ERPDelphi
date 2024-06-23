@@ -2146,15 +2146,13 @@ object MainView: TMainView
     ParentFont = False
     TabOrder = 0
     object btnClose: TButton
-      Left = 726
-      Top = 0
+      Left = 414
+      Top = 5
       Width = 75
-      Height = 70
-      Align = alRight
+      Height = 39
       Caption = 'Fechar'
       TabOrder = 0
       OnClick = btnCloseClick
-      ExplicitHeight = 41
     end
     object pnlLogo: TPanel
       Left = 0
@@ -2285,6 +2283,111 @@ object MainView: TMainView
         ExplicitWidth = 35
       end
     end
+    object pnlUser: TPanel
+      Left = 581
+      Top = 0
+      Width = 220
+      Height = 70
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 3
+      ExplicitLeft = 616
+      object pnlUserLine: TPanel
+        AlignWithMargins = True
+        Left = 0
+        Top = 20
+        Width = 2
+        Height = 30
+        Margins.Left = 0
+        Margins.Top = 20
+        Margins.Right = 0
+        Margins.Bottom = 20
+        Align = alLeft
+        BevelOuter = bvNone
+        Color = 1031129
+        ParentBackground = False
+        TabOrder = 0
+        ExplicitTop = 0
+        ExplicitHeight = 70
+      end
+      object pnlUserImage: TPanel
+        Left = 150
+        Top = 0
+        Width = 70
+        Height = 70
+        Align = alRight
+        BevelOuter = bvNone
+        TabOrder = 1
+        ExplicitLeft = 35
+        object imgUser: TImage
+          Left = 0
+          Top = 0
+          Width = 70
+          Height = 70
+          Align = alClient
+          Center = True
+          ExplicitLeft = 16
+          ExplicitTop = 16
+          ExplicitWidth = 105
+          ExplicitHeight = 105
+        end
+      end
+      object pnlUserData: TPanel
+        Left = 2
+        Top = 0
+        Width = 148
+        Height = 70
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 2
+        ExplicitLeft = 48
+        ExplicitTop = 8
+        ExplicitWidth = 185
+        ExplicitHeight = 41
+        object lblUserName: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 10
+          Width = 142
+          Height = 29
+          Margins.Top = 10
+          Margins.Bottom = 0
+          Align = alClient
+          Alignment = taRightJustify
+          Caption = 'NomeUsu'#225'rio'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -19
+          Font.Name = 'Segoe UI Semilight'
+          Font.Style = []
+          ParentFont = False
+          ExplicitLeft = 24
+          ExplicitTop = 8
+          ExplicitWidth = 113
+          ExplicitHeight = 25
+        end
+        object lblUserLevel: TLabel
+          AlignWithMargins = True
+          Left = 3
+          Top = 39
+          Width = 142
+          Height = 21
+          Margins.Top = 0
+          Margins.Bottom = 10
+          Align = alBottom
+          Alignment = taRightJustify
+          Caption = 'Administrador'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWhite
+          Font.Height = -16
+          Font.Name = 'Segoe UI Light'
+          Font.Style = []
+          ParentFont = False
+          ExplicitLeft = 32
+          ExplicitWidth = 94
+        end
+      end
+    end
   end
   object pnlMenu: TPanel
     Left = 0
@@ -2321,9 +2424,88 @@ object MainView: TMainView
       Color = 5395026
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 360
-      ExplicitTop = 384
-      ExplicitWidth = 185
+      ExplicitTop = 131
+      object pnlLicense: TPanel
+        Left = 291
+        Top = 0
+        Width = 300
+        Height = 41
+        Margins.Left = 0
+        Margins.Top = 0
+        Margins.Right = 10
+        Margins.Bottom = 0
+        Align = alRight
+        BevelOuter = bvNone
+        TabOrder = 0
+        ExplicitLeft = 299
+        ExplicitTop = 3
+        object pnlLicenseLine: TPanel
+          AlignWithMargins = True
+          Left = 0
+          Top = 10
+          Width = 2
+          Height = 21
+          Margins.Left = 0
+          Margins.Top = 10
+          Margins.Right = 0
+          Margins.Bottom = 10
+          Align = alLeft
+          BevelOuter = bvNone
+          Color = 1031129
+          ParentBackground = False
+          TabOrder = 0
+          ExplicitTop = 0
+          ExplicitHeight = 41
+        end
+        object pnlLicenseContent: TPanel
+          Left = 2
+          Top = 0
+          Width = 298
+          Height = 41
+          Align = alClient
+          BevelOuter = bvNone
+          TabOrder = 1
+          ExplicitLeft = 56
+          ExplicitWidth = 185
+          object lblLicenseTitle: TLabel
+            Left = 0
+            Top = 0
+            Width = 298
+            Height = 17
+            Align = alTop
+            Alignment = taRightJustify
+            Caption = 'Licenciado para:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -13
+            Font.Name = 'Segoe UI Light'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 144
+            ExplicitTop = 3
+            ExplicitWidth = 88
+          end
+          object lblLicenseCompany: TLabel
+            Left = 0
+            Top = 17
+            Width = 298
+            Height = 24
+            Align = alClient
+            Alignment = taRightJustify
+            Caption = 'XT Software LTDA-ME.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -16
+            Font.Name = 'Segoe UI Semilight'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 144
+            ExplicitTop = 24
+            ExplicitWidth = 151
+            ExplicitHeight = 21
+          end
+        end
+      end
     end
     object pnlContent: TPanel
       Left = 0

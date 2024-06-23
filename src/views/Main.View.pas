@@ -22,6 +22,18 @@ type
     pnlVersion: TPanel;
     lblVersionTitle: TLabel;
     Label2: TLabel;
+    pnlUser: TPanel;
+    pnlUserLine: TPanel;
+    pnlUserImage: TPanel;
+    imgUser: TImage;
+    pnlUserData: TPanel;
+    lblUserName: TLabel;
+    lblUserLevel: TLabel;
+    pnlLicense: TPanel;
+    pnlLicenseLine: TPanel;
+    pnlLicenseContent: TPanel;
+    lblLicenseTitle: TLabel;
+    lblLicenseCompany: TLabel;
     procedure btnCloseClick(Sender: TObject);
   private
     { Private declarations }
