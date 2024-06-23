@@ -15,6 +15,13 @@ type
     pnlBottom: TPanel;
     pnlContent: TPanel;
     pnlLogo: TPanel;
+    pnlLineLogo: TPanel;
+    pnlLogoContent: TPanel;
+    lblCompanyTitle: TLabel;
+    lblCompanyDescription: TLabel;
+    pnlVersion: TPanel;
+    lblVersionTitle: TLabel;
+    Label2: TLabel;
     procedure btnCloseClick(Sender: TObject);
   private
     { Private declarations }
