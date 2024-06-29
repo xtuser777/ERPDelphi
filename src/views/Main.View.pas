@@ -4,12 +4,11 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons;
 
 type
   TMainView = class(TForm)
     pnlTop: TPanel;
-    btnClose: TButton;
     pnlMenu: TPanel;
     pnlMain: TPanel;
     pnlBottom: TPanel;
@@ -34,7 +33,18 @@ type
     pnlLicenseContent: TPanel;
     lblLicenseTitle: TLabel;
     lblLicenseCompany: TLabel;
+    pnlSair: TPanel;
+    pnlShapeMenu: TPanel;
+    shpMenu: TShape;
+    pnlMenuData: TPanel;
+    btnCaixa: TSpeedButton;
+    SpeedButton1: TSpeedButton;
+    btnFornecedores: TSpeedButton;
+    btnProducts: TSpeedButton;
+    btnConfig: TSpeedButton;
+    btnQuit: TSpeedButton;
     procedure btnCloseClick(Sender: TObject);
+    procedure btnQuitClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -49,6 +59,11 @@ implementation
 {$R *.dfm}
 
 procedure TMainView.btnCloseClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TMainView.btnQuitClick(Sender: TObject);
 begin
   Application.Terminate;
 end;

@@ -2127,6 +2127,7 @@ object MainView: TMainView
     FFFFFFFFE4000027FFFFFFFFFFFFFFFFFFFFFFFFEA000057FFFFFFFFFFFFFFFF
     FFFFFFFFF4BFFD2FFFFFFFFFFFFFFFFFFFFFFFFFFA00005FFFFFFFFFFFFFFFFF
     FFFFFFFFFF0001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  Position = poDesigned
   WindowState = wsMaximized
   TextHeight = 15
   object pnlTop: TPanel
@@ -2145,15 +2146,6 @@ object MainView: TMainView
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    object btnClose: TButton
-      Left = 414
-      Top = 5
-      Width = 75
-      Height = 39
-      Caption = 'Fechar'
-      TabOrder = 0
-      OnClick = btnCloseClick
-    end
     object pnlLogo: TPanel
       Left = 0
       Top = 0
@@ -2163,10 +2155,7 @@ object MainView: TMainView
       BevelOuter = bvNone
       Color = 4605510
       ParentBackground = False
-      TabOrder = 1
-      ExplicitLeft = 104
-      ExplicitTop = 8
-      ExplicitHeight = 41
+      TabOrder = 0
       object pnlLineLogo: TPanel
         Left = 0
         Top = 0
@@ -2186,10 +2175,6 @@ object MainView: TMainView
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitLeft = 8
-        ExplicitTop = 16
-        ExplicitWidth = 185
-        ExplicitHeight = 41
         object lblCompanyTitle: TLabel
           AlignWithMargins = True
           Left = 3
@@ -2206,7 +2191,6 @@ object MainView: TMainView
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitTop = 3
           ExplicitWidth = 109
           ExplicitHeight = 32
         end
@@ -2226,8 +2210,6 @@ object MainView: TMainView
           Font.Name = 'Segoe UI'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 0
-          ExplicitTop = 30
           ExplicitWidth = 112
         end
       end
@@ -2239,7 +2221,7 @@ object MainView: TMainView
       Height = 70
       Align = alLeft
       BevelOuter = bvNone
-      TabOrder = 2
+      TabOrder = 1
       object lblVersionTitle: TLabel
         AlignWithMargins = True
         Left = 3
@@ -2257,8 +2239,6 @@ object MainView: TMainView
         Font.Name = 'Segoe UI Semilight'
         Font.Style = []
         ParentFont = False
-        ExplicitLeft = 16
-        ExplicitTop = 11
         ExplicitWidth = 71
         ExplicitHeight = 21
       end
@@ -2279,7 +2259,6 @@ object MainView: TMainView
         Font.Name = 'Segoe UI Light'
         Font.Style = []
         ParentFont = False
-        ExplicitTop = 52
         ExplicitWidth = 35
       end
     end
@@ -2290,8 +2269,7 @@ object MainView: TMainView
       Height = 70
       Align = alRight
       BevelOuter = bvNone
-      TabOrder = 3
-      ExplicitLeft = 616
+      TabOrder = 2
       object pnlUserLine: TPanel
         AlignWithMargins = True
         Left = 0
@@ -2307,8 +2285,6 @@ object MainView: TMainView
         Color = 1031129
         ParentBackground = False
         TabOrder = 0
-        ExplicitTop = 0
-        ExplicitHeight = 70
       end
       object pnlUserImage: TPanel
         Left = 150
@@ -2318,7 +2294,6 @@ object MainView: TMainView
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitLeft = 35
         object imgUser: TImage
           Left = 0
           Top = 0
@@ -2340,10 +2315,6 @@ object MainView: TMainView
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 2
-        ExplicitLeft = 48
-        ExplicitTop = 8
-        ExplicitWidth = 185
-        ExplicitHeight = 41
         object lblUserName: TLabel
           AlignWithMargins = True
           Left = 3
@@ -2361,8 +2332,7 @@ object MainView: TMainView
           Font.Name = 'Segoe UI Semilight'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 24
-          ExplicitTop = 8
+          ExplicitLeft = 32
           ExplicitWidth = 113
           ExplicitHeight = 25
         end
@@ -2383,7 +2353,7 @@ object MainView: TMainView
           Font.Name = 'Segoe UI Light'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 32
+          ExplicitLeft = 51
           ExplicitWidth = 94
         end
       end
@@ -2399,8 +2369,171 @@ object MainView: TMainView
     Color = 5395026
     ParentBackground = False
     TabOrder = 1
-    ExplicitTop = 41
-    ExplicitHeight = 480
+    object pnlSair: TPanel
+      Left = 0
+      Top = 390
+      Width = 210
+      Height = 41
+      Align = alBottom
+      BevelOuter = bvNone
+      Color = 4605510
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitLeft = 88
+      ExplicitTop = 392
+      ExplicitWidth = 185
+      object btnQuit: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 204
+        Height = 35
+        Align = alClient
+        Caption = '[ SAIR ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 6711039
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        OnClick = btnQuitClick
+        ExplicitTop = -9
+        ExplicitHeight = 50
+      end
+    end
+    object pnlShapeMenu: TPanel
+      Left = 0
+      Top = 0
+      Width = 4
+      Height = 390
+      Align = alLeft
+      BevelOuter = bvNone
+      TabOrder = 1
+      object shpMenu: TShape
+        Left = 0
+        Top = 0
+        Width = 4
+        Height = 50
+      end
+    end
+    object pnlMenuData: TPanel
+      Left = 4
+      Top = 0
+      Width = 206
+      Height = 390
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 2
+      ExplicitLeft = 1
+      ExplicitTop = 3
+      object btnCaixa: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 75
+        Width = 200
+        Height = 50
+        Margins.Top = 0
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ CAIXA ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        ExplicitLeft = 0
+        ExplicitTop = 100
+      end
+      object SpeedButton1: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 25
+        Width = 200
+        Height = 50
+        Margins.Top = 25
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ CLIENTES ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        ExplicitLeft = 0
+        ExplicitTop = 0
+        ExplicitWidth = 206
+      end
+      object btnFornecedores: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 125
+        Width = 200
+        Height = 50
+        Margins.Top = 0
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ FORNECEDORES ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        ExplicitLeft = 6
+      end
+      object btnProducts: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 175
+        Width = 200
+        Height = 50
+        Margins.Top = 0
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ PRODUTOS ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        ExplicitLeft = 6
+        ExplicitTop = 149
+      end
+      object btnConfig: TSpeedButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 325
+        Width = 200
+        Height = 50
+        Margins.Top = 100
+        Margins.Bottom = 0
+        Align = alTop
+        Caption = '[ CONFIG ]'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -16
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        Margin = 5
+        ParentFont = False
+        ExplicitLeft = 0
+        ExplicitTop = 353
+      end
+    end
   end
   object pnlMain: TPanel
     Left = 210
@@ -2410,10 +2543,6 @@ object MainView: TMainView
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 2
-    ExplicitLeft = 560
-    ExplicitTop = 224
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object pnlBottom: TPanel
       Left = 0
       Top = 390
@@ -2424,7 +2553,6 @@ object MainView: TMainView
       Color = 5395026
       ParentBackground = False
       TabOrder = 0
-      ExplicitTop = 131
       object pnlLicense: TPanel
         Left = 291
         Top = 0
@@ -2437,8 +2565,6 @@ object MainView: TMainView
         Align = alRight
         BevelOuter = bvNone
         TabOrder = 0
-        ExplicitLeft = 299
-        ExplicitTop = 3
         object pnlLicenseLine: TPanel
           AlignWithMargins = True
           Left = 0
@@ -2454,8 +2580,6 @@ object MainView: TMainView
           Color = 1031129
           ParentBackground = False
           TabOrder = 0
-          ExplicitTop = 0
-          ExplicitHeight = 41
         end
         object pnlLicenseContent: TPanel
           Left = 2
@@ -2465,8 +2589,6 @@ object MainView: TMainView
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 1
-          ExplicitLeft = 56
-          ExplicitWidth = 185
           object lblLicenseTitle: TLabel
             Left = 0
             Top = 0
@@ -2481,8 +2603,7 @@ object MainView: TMainView
             Font.Name = 'Segoe UI Light'
             Font.Style = []
             ParentFont = False
-            ExplicitLeft = 144
-            ExplicitTop = 3
+            ExplicitLeft = 210
             ExplicitWidth = 88
           end
           object lblLicenseCompany: TLabel
@@ -2499,8 +2620,7 @@ object MainView: TMainView
             Font.Name = 'Segoe UI Semilight'
             Font.Style = []
             ParentFont = False
-            ExplicitLeft = 144
-            ExplicitTop = 24
+            ExplicitLeft = 147
             ExplicitWidth = 151
             ExplicitHeight = 21
           end
@@ -2515,9 +2635,6 @@ object MainView: TMainView
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 6
-      ExplicitTop = -6
-      ExplicitHeight = 419
     end
   end
 end
