@@ -14,7 +14,7 @@ uses
   Vcl.Dialogs,
   Vcl.ExtCtrls,
   Vcl.StdCtrls,
-  Vcl.Buttons;
+  Vcl.Buttons, Vcl.Imaging.pngimage;
 
 type
   TMainView = class(TForm)
@@ -34,7 +34,7 @@ type
     pnlUser: TPanel;
     pnlUserLine: TPanel;
     pnlUserImage: TPanel;
-    imgUser: TImage;
+    imgUserWhite: TImage;
     pnlUserData: TPanel;
     lblUserName: TLabel;
     lblUserLevel: TLabel;
@@ -53,6 +53,7 @@ type
     btnProducts: TSpeedButton;
     btnConfig: TSpeedButton;
     btnQuit: TSpeedButton;
+    imgUserOrange: TImage;
     procedure btnCloseClick(Sender: TObject);
     procedure btnQuitClick(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
@@ -61,6 +62,10 @@ type
     procedure btnProductsClick(Sender: TObject);
     procedure btnConfigClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure lblCompanyTitleMouseEnter(Sender: TObject);
+    procedure lblCompanyTitleMouseLeave(Sender: TObject);
+    procedure imgUserWhiteMouseEnter(Sender: TObject);
+    procedure imgUserWhiteMouseLeave(Sender: TObject);
   private
     procedure GetLineMenu(Sender: TObject);
   public
@@ -115,6 +120,28 @@ begin
   shpMenu.Height := TSpeedButton(Sender).Height;
   shpMenu.Top := TSpeedButton(Sender).Top;
   pnlShapeMenu.Repaint;
+end;
+
+procedure TMainView.imgUserWhiteMouseEnter(Sender: TObject);
+begin
+  imgUserWhite.Visible := false;
+  imgUserOrange.Visible := true;
+end;
+
+procedure TMainView.imgUserWhiteMouseLeave(Sender: TObject);
+begin
+  imgUserWhite.Visible := true;
+  imgUserOrange.Visible := false;
+end;
+
+procedure TMainView.lblCompanyTitleMouseEnter(Sender: TObject);
+begin
+  lblCompanyTitle.Font.Color := $000FBBD9;
+end;
+
+procedure TMainView.lblCompanyTitleMouseLeave(Sender: TObject);
+begin
+  lblCompanyTitle.Font.Color := clWhite;
 end;
 
 procedure TMainView.SpeedButton1Click(Sender: TObject);
