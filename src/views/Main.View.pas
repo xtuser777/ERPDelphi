@@ -14,15 +14,13 @@ uses
   Vcl.Dialogs,
   Vcl.ExtCtrls,
   Vcl.StdCtrls,
-  Vcl.Buttons, Vcl.Imaging.pngimage;
+  Vcl.Buttons, Vcl.Imaging.pngimage, System.ImageList, Vcl.ImgList,
+  System.Actions, Vcl.ActnList;
 
 type
   TMainView = class(TForm)
     pnlTop: TPanel;
     pnlMenu: TPanel;
-    pnlMain: TPanel;
-    pnlBottom: TPanel;
-    pnlContent: TPanel;
     pnlLogo: TPanel;
     pnlLineLogo: TPanel;
     pnlLogoContent: TPanel;
@@ -38,11 +36,6 @@ type
     pnlUserData: TPanel;
     lblUserName: TLabel;
     lblUserLevel: TLabel;
-    pnlLicense: TPanel;
-    pnlLicenseLine: TPanel;
-    pnlLicenseContent: TPanel;
-    lblLicenseTitle: TLabel;
-    lblLicenseCompany: TLabel;
     pnlSair: TPanel;
     pnlShapeMenu: TPanel;
     shpMenu: TShape;
@@ -54,6 +47,14 @@ type
     btnConfig: TSpeedButton;
     btnQuit: TSpeedButton;
     imgUserOrange: TImage;
+    pnlMain: TPanel;
+    pnlBottom: TPanel;
+    pnlLicense: TPanel;
+    pnlLicenseLine: TPanel;
+    pnlLicenseContent: TPanel;
+    lblLicenseTitle: TLabel;
+    lblLicenseCompany: TLabel;
+    pnlContent: TPanel;
     procedure btnCloseClick(Sender: TObject);
     procedure btnQuitClick(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
