@@ -2129,6 +2129,7 @@ object MainView: TMainView
     FFFFFFFFFF0001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
   Position = poDesigned
   WindowState = wsMaximized
+  OnCreate = FormCreate
   TextHeight = 15
   object pnlTop: TPanel
     Left = 0
@@ -2379,9 +2380,6 @@ object MainView: TMainView
       Color = 4605510
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 88
-      ExplicitTop = 392
-      ExplicitWidth = 185
       object btnQuit: TSpeedButton
         AlignWithMargins = True
         Left = 3
@@ -2426,8 +2424,6 @@ object MainView: TMainView
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 2
-      ExplicitLeft = 1
-      ExplicitTop = 3
       object btnCaixa: TSpeedButton
         AlignWithMargins = True
         Left = 3
@@ -2446,6 +2442,7 @@ object MainView: TMainView
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = btnCaixaClick
         ExplicitLeft = 0
         ExplicitTop = 100
       end
@@ -2467,6 +2464,7 @@ object MainView: TMainView
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = SpeedButton1Click
         ExplicitLeft = 0
         ExplicitTop = 0
         ExplicitWidth = 206
@@ -2489,6 +2487,7 @@ object MainView: TMainView
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = btnFornecedoresClick
         ExplicitLeft = 6
       end
       object btnProducts: TSpeedButton
@@ -2509,6 +2508,7 @@ object MainView: TMainView
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = btnProductsClick
         ExplicitLeft = 6
         ExplicitTop = 149
       end
@@ -2530,8 +2530,8 @@ object MainView: TMainView
         Font.Style = []
         Margin = 5
         ParentFont = False
+        OnClick = btnConfigClick
         ExplicitLeft = 0
-        ExplicitTop = 353
       end
     end
   end
